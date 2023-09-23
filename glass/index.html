@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backdrop</title>
+    <style>
+        body{
+            background-image: url(forest.jpg);
+            color: white;
+            background-size: cover;
+        }
+
+        .glass{
+            text-align: center;
+            height: 150px;
+            width: 200px;
+            backdrop-filter: blur(4px);
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            border: 5px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="glass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat doloremque sint corrupti odio ut repellendus autem blanditiis unde incidunt, officia nesciunt ipsum iure, nemo ab modi, quae officiis maiores omnis.</div>
+</body>
+</html>

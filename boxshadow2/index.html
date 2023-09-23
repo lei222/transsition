@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .btn{
+            cursor: pointer;
+            float: left;
+            margin: 5px;
+            line-height: 50px;
+            width: 100px;
+            background-color: cyan;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: .4s;
+            box-shadow: 0 0 5px cyan;
+        }
+        .btn:hover{
+            color: slateblue;
+            box-shadow: 0 0 5px cyan,
+                        0 0 25px cyan,
+                        0 0 50px cyan,
+                        0 0 100px cyan,
+                        0 0 200px cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="btn">Vahid</div>
+    <div class="btn">Murad</div>
+    <div class="btn">Mikayil</div>
+    <div class="btn">Ayaz</div>
+</body>
+</html>

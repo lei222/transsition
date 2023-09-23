@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop shadow vs Box shadow</title>
+    <style>
+        .dost{
+            float: left;
+            width: 292px;
+            height: 150px;
+            background-image: url(lagertha.jpg);
+            background-size: cover;
+            box-shadow: 0 0 5px black;
+            transition: .4s;
+        }
+        .dost:hover{
+            scale: 1.03;
+            box-shadow: 0 0 25px black;
+        }
+        .leman{
+            cursor: progress;
+            margin-top: 50px;
+
+            float: left;
+            width: 292px;
+            height: 150px;
+            background-image: url(lag.png);
+            background-size: cover;
+            transition: .4s;
+            filter: drop-shadow(0 0 2px black);
+        }
+        .leman:hover{
+            scale: 1.03;
+            filter: drop-shadow(0 0 8px black);
+        }
+    </style>
+</head>
+<body>
+    <div class="dost"></div>
+    <div class="leman"></div>
+    
+</body>
+</html>

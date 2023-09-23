@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        .lei{
+            height: 200px;
+            width: 250px;
+            margin: 30px auto;
+            background-image: url(copertina-1.jpg);
+            background-size: cover;
+            transition: .4s;
+            filter: hue-rotate(0deg);
+
+            /* filter: contrast(50%); */
+            /* filter: grayscale(100%); */
+
+        }
+        .lei:hover{
+            /* filter: contrast(100); */
+            scale: 1.02;
+            /* filter: grayscale(0); */
+            filter: hue-rotate(80deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="lei"></div>
+    
+</body>
+</html>
