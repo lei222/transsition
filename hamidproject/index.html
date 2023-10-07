@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cr7</title>
+    <style>
+        .img{
+            margin: 20px;
+            height: 200px;
+            width: 200px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+        }
+        .img::before{
+            content: 'cr7';
+            text-align: center;
+            color: white;
+            
+            position: absolute;
+            border-radius: 50%;
+            background-size: cover;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            transform: rotateY(0deg);
+            opacity: 0%;
+            transition: .4s;
+        }
+        .img:hover::before{
+            transform: rotateY(360deg);
+            opacity: 100%;
+        }
+        .box{
+            background-image: url(mbappe.jpg); 
+        }
+        .box::before{
+            background-image: url(mbappe.jpg);
+        }
+        .hemid{
+        
+            background-image: url(mbappe.jpg);
+    
+        }
+        .hemid::before{
+         
+            background-image: url(roman.jpg);
+            
+        }
+   
+        .mitri{
+          
+            background-image: url(mbappe.jpg);
+            
+            
+        }
+        .mitri::before{
+            
+            
+        }
+        .mitri:hover::before{
+            
+            background-image: url(mbappe.jpg);
+         
+        }
+        .anar{
+            
+            background-image: url(mbappe.jpg);
+            
+        }
+        .anar::before{
+            
+        }
+        .anar:hover::before{
+            
+            background-image: url(mbappe.jpg);
+        }
+        .davud{
+            
+            background-image: url(mbappe.jpg);
+           
+        }
+        .davud::before{
+           
+            
+        }
+        .davud:hover::before{
+            
+            background-image: url(mbappe.jpg);
+        }
+        .elmaddin{
+            
+            background-image: url(mbappe.jpg);
+            
+        }
+        .elmaddin::before{
+            
+        }
+        .elmaddin:hover::before{
+            background-image: url(mbappe.jpg);
+            
+        }
+
+
+
+        .el{
+            
+            background-image: url(mbappe.jpg);
+           
+        }
+        .el::before{
+            
+        }
+        .el:hover::before{
+            
+            background-image: url(mbappe.jpg);
+           
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="img box"></div>
+    <div class="img hemid"></div>
+    <div class="img mitri"></div>
+    <div class="img anar"></div>
+    <div class="img davud"></div>
+    <div class="img elmaddin"></div>
+    <div class="img el"></div>
+</body>
+</html>

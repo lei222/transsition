@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+        .img{
+            margin: 20px;
+            height: 180px;
+            width: 160px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+        }
+        .img::before{
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background-size: cover;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            transform: rotate(0deg);
+            opacity: 0%;
+            transition: 2s;
+        }
+        .img:hover::before{
+            opacity: 100;
+            transform: rotateD(360deg);
+        }
+        .lei1{
+            background-image: url(bella.jpeg);
+        }
+        .lei1::before{
+            background-image: url(childhood.jpeg);
+        }
+        .lei2{
+            background-image: url(gigi.webp);
+        }
+        .lei2::before{
+            background-image: url(childhood3.jpeg);
+        }
+        .lei3{
+            background-image: url(kylie.avif);
+        }
+        .lei3::before{
+            background-image: url(childhood2.webp);
+        }
+        .lei4{
+            background-image: url(kendall.jpg);
+        }
+        .lei4::before{
+            background-image: url(childhoodkendal.webp);
+        }
+        .lei5{
+            background-image: url(krisjenner.webp);
+        }
+        .lei5::before{
+            background-image: url(young.jpg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img lei1"></div>
+    <div class="img lei2"></div>
+    <div class="img lei3"></div>
+    <div class="img lei4"></div>
+    <div class="img lei5"></div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qaraqan</title>
+    <style>
+        .box{
+            margin: 20px;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            background-image: url(qaraqan.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+        }
+        .box::before{
+            content: "QARAQAN";
+            text-align: center;
+            color: white;
+            line-height: 210px;
+            /* background-image: url(roman.jpg); */
+            background-size: cover;
+            background-color: black;
+            position: absolute;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0%;
+            /* scale: 0; */
+            transition:2s;
+        }
+        .box:hover::before{
+            /* scale: 1; */
+            opacity: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

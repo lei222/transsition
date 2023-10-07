@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders</title>
+    <style>
+        .qirmizi{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px; 
+            margin-bottom: 10px;
+            transition: 1s;
+        }
+
+        .sari{
+            background-color:green;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        .qirmizi:hover~.sari{
+            transition: 1s;
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="qirmizi"></div>
+    <div class="sari"></div>
+    
+</body>
+</html>

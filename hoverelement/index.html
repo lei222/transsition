@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover other element</title>
+    <style>
+        .hover{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .otherElement{
+            height: 100px;
+            width: 100px;
+            background-color: lime;
+        }
+        .hover:hover+.otherElement{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover"></div>
+    <div class="otherElement"></div>
+    
+</body>
+</html>

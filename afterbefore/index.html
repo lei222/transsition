@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After & Before</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .el{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        h2{
+            cursor: pointer;
+        }
+        h2::before{
+            content: '';
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: lime;
+            /* transform: translate(0px, 0px); */
+            transition: 2s;
+            /* scale: 0px; */
+        }
+        h2::after{
+            content: '';
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: red;
+            /* transform: translate(0px, 0px); */
+            transition: 3s;
+            scale: 0px;
+        }
+        h2:hover::before{
+            scale: 3px;
+            
+            /* transform: translate(0px, 30px); */
+        }
+        h2:hover::after{
+            scale: 3px;
+            
+            /* transform: translate(0px, -30px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="el">
+        <h2>Elmaddin Ahmadzada</h2>
+    </div>
+    
+</body>
+</html>

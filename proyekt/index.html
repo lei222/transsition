@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyekt</title>
+    <style>
+        .lei{
+            background-color: rgb(222, 181, 181);
+            position: relative;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 10px;
+            
+        }
+        .lei::before{
+            text-align: center;
+            position: absolute;
+            content: "Leila";
+            top: 5px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
+            line-height: 115px;
+            opacity: 100;
+
+            
+        }
+        .lei:hover::before{
+            scale: 2;
+            opacity: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="lei"></div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        button{
+            background-color: lime;
+            padding: 15px 20px;
+            margin: 20px 60px;
+            cursor: pointer;
+            position: relative;
+        }
+        button::before{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background-color: red;
+            /* z-index: -1; */
+            opacity:100;
+            transition: .4s;
+        }
+        button:hover::before{
+            opacity: 0%;
+        }
+    </style>
+</head>
+<body>
+    <button>ASPA</button>
+</body>
+</html>
