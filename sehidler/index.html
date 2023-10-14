@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Web Page</title>
+    <style>
+        html, body {
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        *{
+            margin:0;
+            padding: 0;
+        }
+        nav{
+            background-color:rgb(211, 204, 142);
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        nav a{
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        section{
+            height: calc(100% - 50px);
+            scroll-margin-top: 50px;
+            padding: 30px;
+        }
+
+        #Home{
+            background-color:white;
+            margin-top: 50px;
+        }
+        #galery{
+            background-color:white;
+        }
+        #about{
+            background-color: white;
+        }
+        #contact{
+            background-color: white;
+        }
+        .img{
+            height: 300px;
+            width: 300px;
+            background-size: cover;
+            margin: 10px auto;
+        }
+        .img1{
+            background-image: url(İlqar_Mirzəyev.jpg);
+        } 
+        .img2{
+            background-image: url(cingiz_Mustafayev2.jpg);
+
+        }
+        .img3{
+            background-image: url(poladhesimov.jpg);
+        }
+        .img4{
+            background-image: url(mubarizibrahimov.jpg);
+        }
+        .basliq{
+            font-size: 40px;
+        }
+        .text{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Ilqar Mirzeyev</a>
+        <a href="#galery">Cingiz</a>
+        <a href="#about">Polad Hesimov</a>
+        <a href="#contact">Mubariz</a>
+    </nav>
+
+    <section id="home">
+        <div class="basliq">Ilqar Mirzeyev</div>
+        <div class="img img1"></div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam a ducimus consequatur dolorem debitis, veniam quaerat, exercitationem assumenda culpa accusantium sequi iste accusamus. Odio facilis distinctio quis itaque atque.</div>
+    </section>
+    <section id="galery">
+        <div class="basliq">Cingiz Mustafayev</div>
+        <div class="img img2"></div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam a ducimus consequatur dolorem debitis, veniam quaerat, exercitationem assumenda culpa accusantium sequi iste accusamus. Odio facilis distinctio quis itaque atque.</div>
+    </section>
+    <section id="about">
+        <div class="basliq">Polad Hesimov</div>
+        <div class="img img3"></div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam a ducimus consequatur dolorem debitis, veniam quaerat, exercitationem assumenda culpa accusantium sequi iste accusamus. Odio facilis distinctio quis itaque atque.</div>
+    </section>
+    <section id="contact">
+        <div class="basliq">Mubariz Ibrahimov</div>
+        <div class="img img4"></div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam a ducimus consequatur dolorem debitis, veniam quaerat, exercitationem assumenda culpa accusantium sequi iste accusamus. Odio facilis distinctio quis itaque atque.</div>
+    </section>
+    
+</body>
+</html>
