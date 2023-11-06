@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ev tapsirigi</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .item1{grid-area: header;}
+        .item2{grid-area: main;}
+        .item3{grid-area: menu;}
+        .item4{grid-area: right;}
+        .item5{grid-area: footer;}
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+
+            
+            'header header header header header header'
+            'main main main menu menu menu'
+            'main main main footer footer right'
+
+            
+            
+            ;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+            height: 100%;
+        }
+        .item{
+            display: flex;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item item1">Header</div>
+        <div class="item item2">Main</div>
+        <div class="item item3">Menu</div>
+        <div class="item item4">Right</div>
+        <div class="item item5">Footer</div>
+    </div>
+    
+</body>
+</html>
