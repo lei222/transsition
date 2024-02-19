@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box - shadow</title>
+    <style>
+        body{
+            background-color: black;
+            margin-top: 40px;
+            padding-left: 50px;
+        
+        }
+        .cafi{
+            cursor: pointer;
+            float: left;
+            line-height: 50px;
+            width: 200px;
+            background-color: cyan;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 25px;
+            font-weight: bold;
+            transition: 1s;
+            box-shadow: 0 0 5px cyan;
+        }
+        .cafi:hover{
+            box-shadow: 0 0 5px rgba(0, 255,255, 0.6),
+                        0 0 25px rgba(0, 255,255, 0.5),
+                        0 0 50px rgba(0, 255,255, 0.4),
+                        0 0 100px rgba(0, 255,255, 0.3),
+                        0 0 200px rgba(0, 255,255, 0.2);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cafi"> The Cafi</div>
+    
+</body>
+</html>

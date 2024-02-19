@@ -1,0 +1,20 @@
+// let viscas = 4;
+// let qiymet =10;
+// let ay;
+// ay = viscas * qiymet;
+// console.log('menim ayda ' + ay + ' azn xercim cixir');
+// let pul = 100;
+// let dollar = 1.7;
+// netice = pul / dollar;
+// console.log(pul + ' azn ' + netice + ' dollar edir');
+// let mesafe = 440;
+// let vaxt = 4;
+// let suret ;
+// suret = mesafe / vaxt ;
+// console.log('bakidan cebrayila ' + mesafe + ' km yolu, ' + suret + '  km/ saat suret ile gederek ' + vaxt + ' saata catdim');
+
+let inek = 4;
+let inekAyaq = 4;
+let ayaq;
+ayaq = inek* inekayaq;
+console.log('menim ' + inek + ' ineyim varsa demeli onlarin ' + ayaq + ' ayagi var');
