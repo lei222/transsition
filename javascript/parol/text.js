@@ -11,4 +11,4 @@ switch (true) {
         netice = 'Istifadeci adiniz ve parolunuz sehvdir.Sayta giris ede bilmersiniz.';
         break;
 }
-document.getElementById('cavab').innerHTML = netice
+document.getElementById('cavab').innerHTML = netice;
