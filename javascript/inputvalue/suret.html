@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitri</title>
+</head>
+
+<body>
+    Suret <input type="text" id="suret"><br><br>
+    Mesafe <input type="text" id="mesafe"><br><br>
+    <button class="zaman">Zaman</button>
+    <h1 id="result"></h1>
+    
+    <script>
+        const zaman = document.querySelector('.zaman');
+
+        zaman.onclick = function() {
+            let netice = suret.value / mesafe.value;
+            document.getElementById('result').innerHTML = `${suret.value} km suret ile geden masin ${mesafe.value} km mesafeni ${netice} saata catar`;
+        }
+    </script>
+
+  
+
+</body>
+
+</html>
